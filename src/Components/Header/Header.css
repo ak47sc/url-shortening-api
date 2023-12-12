@@ -1,0 +1,106 @@
+header{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    padding: 0 6rem ;
+}
+.hidden{
+    display: none !important;
+}
+header *{
+    margin: 0;
+}
+header .nav-toggle-btn{
+    display: none;
+}
+.nav-bar{
+    width: 100%;
+    margin-left: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links{
+    padding: 0;
+}
+.nav-links li{
+    list-style: none;
+}
+header * a{
+    text-decoration: none;
+    color: var(--paragraph-color);
+    font-weight: 700;
+}
+a:hover{
+    color: hsl(0, 0%, 0%);
+}
+.nav-login{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-login button{
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: var(--button-color);
+
+    color: white;
+    border: 0;
+
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-login button:hover{
+    background-color: hsl(180, 48%, 82%);
+}
+
+@media screen and (max-width:700px) {
+    header{
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 0 2rem 0;
+    }
+    header * a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    header h1{
+        align-self: flex-start;
+    }
+    header .nav-toggle-btn{
+        display: block;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 3rem;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 5px;
+        margin: 0;
+
+    }
+    .nav-links{
+        padding: 1.5rem 0;
+        width: 90%;
+        flex-direction: column;
+    }
+    .nav-login{
+        padding: 1.5rem 0;
+        border-top: 2px solid hsl(258, 24%, 49%);
+        border-radius: 0 0 10px 10px;
+        width: 90%;
+        flex-direction: column;
+    }
+}

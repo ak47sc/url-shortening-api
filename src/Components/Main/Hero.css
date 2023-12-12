@@ -1,0 +1,73 @@
+.hero{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5rem 0 8rem 6rem;
+
+    overflow: hidden;
+}
+.intro-section h1{
+    margin: 0;
+    line-height: 5rem;
+    font-size: 72px;
+    width: 90%;
+}
+.hero img{
+    position: relative;
+    right: -5rem;
+}
+.intro-section button{
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: var(--button-color);
+
+    color: white;
+    border: 0;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 0.5rem 2.5rem;
+
+}
+.intro-section p{
+    color: var(--paragraph-color);
+}
+.intro-section button:hover{
+    background-color: hsl(180, 48%, 82%);
+}
+
+@media screen and (max-width:700px) {
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0;
+        margin-bottom: 10rem;
+        overflow: hidden;
+    }
+    .hero img{
+        position: relative;
+        left: 5.5rem;
+        z-index: -1;
+
+        width: 28rem;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-section h1{
+        line-height: 2rem;
+        font-size: 32px;
+        text-align: center;
+        width: auto;
+    }
+    .intro-section p{
+        text-align: center;
+    }
+}

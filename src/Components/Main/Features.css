@@ -1,0 +1,127 @@
+.features{
+    position: relative;
+
+    background-color: rgba(240,241,245,255);
+    padding: 0 6rem 8rem 6rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.features h1{
+    margin: 0;
+    font-size: 32px;
+}
+.features .features-headings{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.features .features-headings p {
+    width: 30rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+.card-wrapper{
+    position: relative;
+
+    display: flex;
+    gap: 2rem;
+}
+.card-wrapper .card{
+    position: relative;
+    z-index: 2;
+
+    min-width: 2rem;
+    height: fit-content;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card-wrapper .card .img-circle{
+    position: absolute;
+    top: -2rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(257, 27%, 26%);
+    padding: 2rem;
+    border-radius: 50%;
+}
+.card-wrapper .card p{
+    color: var(--paragraph-color);
+}
+.card-wrapper .card h2{
+    margin-top: 2.5rem;
+}
+.card-wrapper .card:nth-child(3){
+    margin-top: 2.5rem;
+}
+.card-wrapper .card:nth-child(4){
+    margin-top: 5rem;
+}
+.line{
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+
+    height: .5rem;
+    width: 80%;
+
+    background-color: hsl(180, 66%, 49%);
+}
+
+@media screen and (max-width:700px) {
+    .features{
+        padding: 0 0 4rem;
+    }
+    .card-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .features .features-headings p{
+        width: auto;
+        margin-bottom: 2rem;
+    }
+    .features h1{
+        font-size: 24px;
+    }
+    .card-wrapper .card{
+        width:15rem;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    .card-wrapper .card:nth-child(3){
+        margin-top: 2rem;
+    }
+    .card-wrapper .card:nth-child(4){
+        margin-top: 2rem;
+    }
+    .card-wrapper .card .img-circle{
+        top: -2rem;
+        left: 35%;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .card-wrapper .card h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .card-wrapper .card p{
+        text-align: center;
+    }
+    .line{
+        width: 0.5rem;
+        height: 80%;
+    }
+}

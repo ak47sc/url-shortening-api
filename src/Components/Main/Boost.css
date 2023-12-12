@@ -1,0 +1,58 @@
+.boost{
+    position: relative;
+
+    width: 100%;
+    height: 15rem;
+    background-color: hsl(257, 27%, 26%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boost h1{
+    position: relative;
+    z-index: 10;
+    font-size: 32px;
+    color: white;
+}
+.image-design{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boost button{
+    position: relative;
+    
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: var(--button-color);
+
+    color: white;
+    border: 0;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 1rem 2.5rem;
+
+}
+.boost button:hover{
+    background-color: hsl(180, 48%, 82%);
+}
+
+@media screen and (max-width:700px) {
+    .boost h1{
+        font-size: 24px;
+    }
+    .image-design{
+        background-image: url("../../assets/images/bg-boost-mobile.svg");
+    }
+    .boost button{
+        font-size: 16px;
+        padding: 0.5rem 2rem;
+    }
+}
