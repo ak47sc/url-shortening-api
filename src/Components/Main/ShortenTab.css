@@ -35,7 +35,7 @@
     height: inherit;
     border-radius: 10px;
 
-    background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    background-image: url("../../../public/images/bg-shorten-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -134,7 +134,10 @@
     height: 2rem;
     width: 5rem;
 }
-
+.shorten-input form button:disabled{
+    cursor: progress;
+    background-color: gray !important;
+}
 @media screen and (max-width:700px) {
     .shorten-wrapper{
         width: 95%;
@@ -172,5 +175,8 @@
     .form-error-msg{
         bottom: 3.5rem;
         left: 6%;
+    }
+    .shorten-img{
+        background-image: url("../../../public/images/bg-shorten-mobile.svg");
     }
 }

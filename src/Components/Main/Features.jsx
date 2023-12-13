@@ -1,5 +1,8 @@
 import './Features.css'
 import ShortenTab from './ShortenTab';
+import brandReg from '../../assets/images/icon-brand-recognition.svg'
+import recordsImg from '../../assets/images/icon-detailed-records.svg'
+import customizableImg from '../../assets/images/icon-fully-customizable.svg'
 function Features() {
     return (
         <section className="features">
@@ -18,7 +21,7 @@ function Features() {
                     <div className='line'></div>
                     <div className='card'>
                         <div className="img-circle">
-                            <img src="src\assets\images\icon-brand-recognition.svg" alt="" />
+                            <img src={brandReg} alt="" />
                         </div>
                         <h2>Brand Recognition</h2>
                         <p>
@@ -28,7 +31,7 @@ function Features() {
                     </div>
                     <div className='card'>
                         <div className="img-circle">
-                            <img src="src\assets\images\icon-detailed-records.svg" alt="" />
+                            <img src={recordsImg} alt="" />
                         </div>
                         <h2>Detailed Records</h2>
                         <p>
@@ -38,7 +41,7 @@ function Features() {
                     </div>
                     <div className='card'>
                         <div className="img-circle">
-                            <img src="src\assets\images\icon-fully-customizable.svg" alt="" />
+                            <img src={customizableImg} alt="" />
                         </div>
                         <h2>Fully Customizable</h2>
                         <p>

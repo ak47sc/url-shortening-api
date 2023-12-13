@@ -1,4 +1,5 @@
 import './Hero.css'
+import heroImg from '../../assets/images/illustration-working.svg'
 function Hero() {
     return (
         <section className='hero'>
@@ -10,7 +11,7 @@ function Hero() {
                 </p>
                 <button>Get Started</button>
             </div>
-            <img src="src\assets\images\illustration-working.svg" alt="HI" />
+            <img src={heroImg} alt="HI" />
         </section>
     );
 }
