@@ -46,10 +46,13 @@ function ShortenTab() {
         e.target.disabled = false;
         e.target.textContent = "Shorten It!"
         if (value) {
-            const newLink = <div className='link-tab'>
-                <p>{urlRef.current.value}</p>
+            const newLink = 
+            <div className='link-tab'>
+                <div>
+                    <span className='long-link-text'>{urlRef.current.value}</span>
+                </div>
                 <div className='link-tab-right'>
-                    <p className='shorten-link-text'>{value}</p>
+                    <span className='shorten-link-text'>{value}</span>
                     <button onClick={(e) => {
                         navigator.clipboard.writeText(value);
                         e.target.setAttribute("style", "cursor:auto;background-color:hsl(260, 8%, 14%)")
